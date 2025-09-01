@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --background: #0b0e14;
+  --border: #1f2430;
+  --navbackground: #0a0f18;
+  --primary: #6c4bff;
+  --accent: #00e0ff;
+  --foreground: #e6edf3;
+  --navbarForeground: #9fb4ff;
+  --card: #0f1620;
+  --mounted-foreground: #9aa6b2;
+  --secondary: #0a1020;
+  --secondary-foreground: #c8d7ff;
+}
+
+#body {
+  background-color: var(--background);
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Inter';
+}
+
+#headerBar {
+  border-radius: 12px;
+  background-color: var(--navbackground);
+  border: 1px solid var(--border);
+}
+
+.logo {
+  height: 36px;
+  width: 36px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.name {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.text {
+  color: var(--foreground);
+}
+
+.nav-text {
+  text-decoration: none;
+  color: var(--navbarForeground);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Inter", "Inter Fallback";
+}
+
+.hire-me {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-visual {
+  flex: 1;
+  min-height: 300px;
+  background: radial-gradient(
+      120px 120px at 20% 30%,
+      var(--accent) 0%,
+      transparent 60%
+    ),
+    radial-gradient(160px 160px at 80% 60%, var(--primary) 0%, transparent 60%),
+    linear-gradient(180deg, var(--navbackground), var(--card));
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(225, 225, 225, 0.02) inset;
+}
+
+#me h1 {
+  font-size: 40px;
+  line-height: 48px;
+  margin: 16px 0 12px 0;
+  font-weight: 700;
+}
+
+#me > div {
+  flex: 1;
+}
+
+#me p {
+  color: var(--mounted-foreground);
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+#dwncv {
+  padding: 12px 16px;
+  background: var(--secondary);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary-foreground);
+  border-radius: 12px;
+  text-decoration: none;
+}
