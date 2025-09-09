@@ -26,9 +26,10 @@
 
 #body {
   background-color: var(--background);
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   font-family: "Inter";
+  word-wrap: break-word;
 }
 
 #headerBar {
@@ -284,4 +285,21 @@
   border: 1px solid var(--border);
   border-radius: 12px;
   color: var(--foreground);
+}
+
+/* Mobile size */
+@media screen and (max-width: 600px) {
+
+  .name {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  #project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-groups {
+    grid-template-columns: 1fr;
+  }
 }
